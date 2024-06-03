@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Product Display</title>
+    <link rel="stylesheet" href="svg.css">
+</head>
+<body>
+    <div class="product-display">
+        <img src="prod1.png" style="width: 00px; height: 30px;" alt="Product Image" class="product-image">
+        <svg class="futuristic-lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+            <!-- Top left -->
+            <polyline points="150,150 100,150 50,100 50,50" stroke="red" stroke-width="2" fill="none" class="line top-left"/>
+            <circle cx="50" cy="50" r="5" fill="red" />
+            <!-- Top right -->
+            <polyline points="350,150 400,150 450,100 450,50" stroke="red" stroke-width="2" fill="none" class="line top-right"/>
+            <circle cx="450" cy="50" r="5" fill="red" />
+            <!-- Bottom left -->
+            <polyline points="150,350 100,350 50,400 50,450" stroke="red" stroke-width="2" fill="none" class="line bottom-left"/>
+            <circle cx="50" cy="450" r="5" fill="red" />
+            <!-- Bottom right -->
+            <polyline points="350,350 400,350 450,400 450,450" stroke="red" stroke-width="2" fill="none" class="line bottom-right"/>
+            <circle cx="450" cy="450" r="5" fill="red" />
+        </svg>
+        <div class="value top-left">Value 1</div>
+        <div class="value top-right">Value 2</div>
+        <div class="value bottom-left">Value 3</div>
+        <div class="value bottom-right">Value 4</div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

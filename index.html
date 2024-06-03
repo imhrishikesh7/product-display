@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SOLAR - Holographic Product Display</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="svg.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>25 + 5 Clock</title>
+  </head>
+
+  <body>
+    <img src="bg.png" id="myVideo" alt="">
+    <!-- <video autoplay muted loop id="myVideo">
+      <source src="plexus-bg.mp4" type="video/mp4">
+    </video> -->
+    <div class="container">
+      <div class="map-arrow-svg-wrapper arr" id="nextButton">
+        <svg class="map-arrow-svg" style="width: 4vw; height: 8vh" viewBox="-1 0 18 17" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+            <polygon class="arrow"
+              points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+            </polygon>
+            <polygon class="arrow-fixed"
+              points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596">
+            </polygon>
+            <path fill="white"
+              d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z">
+            </path>
+          </g>
+        </svg>
+      </div>
+      <div class="map-arrow-svg-wrapper arl" id="prevButton">
+        <svg class="map-arrow-svg" style="width: 4vw; height: 8vh" viewBox="0 0 18 17" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+            <polygon class="arrow"
+              points="1.62533333 8.33860465 10.2386667 15.3067621 11.096 14.3175671 3.70933333 8.34246869 11.092 2.42790698 10.24 1.43613596">
+            </polygon>
+            <polygon class="arrow-fixed"
+              points="1.62533333 8.33860465 10.2386667 15.3067621 11.096 14.3175671 3.70933333 8.34246869 11.092 2.42790698 10.24 1.43613596">
+            </polygon>
+            <path fill="white"
+              d="M18,0.56157424 L18,16.1929159 L8.292,8.33860465 L18,0.56157424 L18,0.56157424 Z M16.6666667,3.30246869 L10.3746667,8.34246869 L16.6666667,13.4327013 L16.6666667,3.30246869 L16.6666667,3.30246869 Z">
+            </path>
+          </g>
+        </svg>
+      </div>
+      <div class="product-display">
+        <!-- <div class="t-label" id="timer-label">Superpower 90</div> -->
+        <!-- <h1 class="t-label glitch" data-target-resolver>Superpower 90</h1> -->
+        <h1 class="glitch" data-target-resolver id="titleLabel"></h1>
+
+        <img src="" id="productImage" alt="Product Image" class="product-image">
+        <svg class="futuristic-lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+          <!-- Top left: Diagonal slash down then left -->
+          <polyline points="150,150 75,100 0,100" stroke="white" stroke-width="1" fill="none" class="line top-left" />
+          <circle cx="0" cy="100" r="2" fill="white" />
+      
+          <!-- Top right: Diagonal slash down then right -->
+          <polyline points="350,150 425,100 500,100" stroke="white" stroke-width="1" fill="none" class="line top-right" />
+          <circle cx="500" cy="100" r="2" fill="white" />
+      
+          <!-- Bottom left: Diagonal slash up then left -->
+          <polyline points="150,350 75,400 0,400" stroke="white" stroke-width="1" fill="none" class="line bottom-left" />
+          <circle cx="0" cy="400" r="2" fill="white" />
+      
+          <!-- Bottom right: Diagonal slash up then right -->
+          <polyline points="350,350 425,400 500,400" stroke="white" stroke-width="1" fill="none" class="line bottom-right" />
+          <circle cx="500" cy="400" r="2" fill="white" />
+      </svg>
+      
+      
+      
+      
+      
+
+
+        <p class="value top-left"><span class="pro-callout" id="val1"></span> <br>Nominal Density (g/cc)</p>
+        <p class="value top-right"><span class="pro-callout" id="val2"></span> <br>Relative Weight Strength*</p>
+        <p class="value bottom-left"><span class="pro-callout" id="val3"></span> <br>Relative Bulk Strength*</p>
+        <p class="value bottom-right"><span class="pro-callout" id="val4"></span> <br>Minimum Velocity of Detonation</p>
+      </div>
+      <!-- <div class="clock"> -->
+
+      <!-- timer section -->
+
+      <div class="holo">
+      </div>
+      <div class="holo-border"></div>
+
+      <!-- break section -->
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!--     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
+
+  </html>
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
